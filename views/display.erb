@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>What to wear....</title>
+</head>
+<body>
+
+<h1>What should you be wearing on this day....</h1>
+<p>You should be wearing the following for the day...</p>
+<%= @zipcode %> is the zipcode you entered!!!<br>
+<%= @url_zipcode %> is the api output....<br>
+<%= @lat %> the lat<br>
+<%= @long %> the long <br>
+<%= @city %> city <br>
+<%= @url %> the api output.... <br>
+<%= @city_weather['currently']['temperature'] %> &#8457; at the moment <br>
+<%= @current_temp%> the temp val<br>
+<%= @tempx%> Low Temp for today<br>
+<%= @tempy%> High Temp for today<br>
+  <%if @current_temp > 74.9 %>
+    <h1>shorts</h1>
+  <%else%>
+  <h1>pants</h1>
+  <%end%>
+<a href='/'>Home</a>
+</body>
+</html>
